@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="contactListApi.NegativeTest">
+      <class name="gitHub.GitHubExample">
         <methods>
-          <include name="addContactWithMoreSize"/>
+          <include name="createRepository"/>
         </methods>
-      </class> <!-- contactListApi.NegativeTest -->
+      </class> <!-- gitHub.GitHubExample -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
