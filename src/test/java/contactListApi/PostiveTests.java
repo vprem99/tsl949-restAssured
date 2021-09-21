@@ -98,7 +98,7 @@ public class PostiveTests {
 						.delete("http://3.13.86.142:3000/contacts/"+id)
 					.then()
 						.log()			//Print
-						.body()
+						.headers()
 						.statusCode(204);   // Assertion
 	}	
 

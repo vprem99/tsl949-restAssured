@@ -1,29 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="5" passed="4">
+<testng-results skipped="0" failed="0" ignored="1" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="15137" started-at="2021-09-21T07:05:06Z" finished-at="2021-09-21T07:05:21Z">
+  <suite name="Default suite" duration-ms="13488" started-at="2021-09-21T08:49:04Z" finished-at="2021-09-21T08:49:18Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="15137" started-at="2021-09-21T07:05:06Z" finished-at="2021-09-21T07:05:21Z">
-      <class name="contactListApi.PostiveTests">
-        <test-method status="PASS" signature="addContact()[pri:0, instance:contactListApi.PostiveTests@55f3ddb1]" name="addContact" duration-ms="13025" started-at="2021-09-21T07:05:06Z" description="Add Specific Contact" finished-at="2021-09-21T07:05:19Z">
+    <test name="Default test" duration-ms="13488" started-at="2021-09-21T08:49:04Z" finished-at="2021-09-21T08:49:18Z">
+      <class name="contactListApi.NegativeTest">
+        <test-method status="PASS" signature="addContactWithMoreSize()[pri:0, instance:contactListApi.NegativeTest@55f3ddb1]" name="addContactWithMoreSize" duration-ms="12568" started-at="2021-09-21T08:49:04Z" description="Negative Test with too many Character" finished-at="2021-09-21T08:49:17Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addContact -->
-        <test-method status="PASS" signature="getSpecificContact()[pri:0, instance:contactListApi.PostiveTests@55f3ddb1]" name="getSpecificContact" duration-ms="707" started-at="2021-09-21T07:05:19Z" description="Get Specific Contact" depends-on-methods="contactListApi.PostiveTests.addContact" finished-at="2021-09-21T07:05:19Z">
+        </test-method> <!-- addContactWithMoreSize -->
+        <test-method status="PASS" signature="getSpecificContact()[pri:0, instance:contactListApi.NegativeTest@55f3ddb1]" name="getSpecificContact" duration-ms="757" started-at="2021-09-21T08:49:17Z" description="Getting Contact which does not exist" finished-at="2021-09-21T08:49:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getSpecificContact -->
-        <test-method status="PASS" signature="updateContact()[pri:0, instance:contactListApi.PostiveTests@55f3ddb1]" name="updateContact" duration-ms="617" started-at="2021-09-21T07:05:19Z" description="Updating Contact info" depends-on-methods="contactListApi.PostiveTests.getSpecificContact" finished-at="2021-09-21T07:05:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateContact -->
-        <test-method status="PASS" signature="deleteContact()[pri:0, instance:contactListApi.PostiveTests@55f3ddb1]" name="deleteContact" duration-ms="612" started-at="2021-09-21T07:05:20Z" description="Get Specific Contact" depends-on-methods="contactListApi.PostiveTests.updateContact" finished-at="2021-09-21T07:05:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteContact -->
-      </class> <!-- contactListApi.PostiveTests -->
+      </class> <!-- contactListApi.NegativeTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
